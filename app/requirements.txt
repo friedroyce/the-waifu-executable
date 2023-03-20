@@ -1,3 +1,4 @@
 mega.py
 pyaudio
 cryptography
+keyboard
