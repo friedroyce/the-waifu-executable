@@ -54,10 +54,10 @@ def start_recording():
     wavefile.close()
 
     # Upload to Mega.nz
-    mega = Mega()
-    m = mega.login(MEGA_EMAIL, MEGA_PASSWORD)
-    file = m.upload(output_filename)
-    print("File uploaded to Mega.nz: ", file)
+    # mega = Mega()
+    # m = mega.login(MEGA_EMAIL, MEGA_PASSWORD)
+    # file = m.upload(output_filename)
+    # print("File uploaded to Mega.nz: ", file)
 
 # Press F to start recording
 print("Press F to start recording...")
