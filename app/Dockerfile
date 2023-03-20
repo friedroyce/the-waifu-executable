@@ -4,8 +4,7 @@ WORKDIR /app
 
 # Install dependencies
 RUN apt-get update && \
-    apt-get install -y build-essential libssl-dev libffi-dev python3-dev && \
-    apt-get install python3-dev portaudio19-dev && \
+    apt-get install -y build-essential libssl-dev libffi-dev python3-dev portaudio19-dev && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* 
 
