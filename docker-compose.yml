@@ -1,0 +1,20 @@
+version: "3"
+
+services:
+  app:
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+    ports:
+      - "8000:80"
+    # depends_on:
+    #   - whisp
+    # environment:
+    #   - DATABASE_URL=postgresql://user:password@db:5432/mydatabase
+  # whisp:
+  #   image: postgres:13
+  #   restart: always
+  #   environment:
+  #     POSTGRES_USER: user
+  #     POSTGRES_PASSWORD: password
+  #     POSTGRES_DB: mydatabase
